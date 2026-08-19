@@ -57,12 +57,12 @@
             margin-left: 5px;
             font-weight: 500;
         }
-        .btn-code {
+        .btn-view {
             background-color: #fafbfc;
             color: #24292e;
-            border: 1px solid #rgba(27,31,35,0.15);
+            border: 1px solid rgba(27,31,35,0.15);
         }
-        .btn-code:hover { background-color: #f3f4f6; }
+        .btn-view:hover { background-color: #f3f4f6; }
         .btn-colab {
             background-color: #f9ab00;
             color: white;
@@ -74,34 +74,35 @@
 <body>
 
 <div class="container">
-    <h1>🐍 거거통통 감자 프로젝트</h1>
-    <p> 일단 주피터 노트북 준비. 연습. </p>
+    <h1>🐍 파이썬 및 주피터 프로젝트 대시보드</h1>
+    <p>GitHub Pages 홈페이지에서 파일들을 직접 열거나 실행할 수 있습니다.</p>
 
     <ul class="file-list">
         
-        <!-- 예시 1: 일반 파이썬 파일 (.py)
+        <!-- 1. 주피터 노트북 파일 예시 (01_소개.ipynb) -->
         <li class="file-item">
             <div>
-                <span class="file-name">📄 main_analysis.py</span>
-                <p style="margin: 5px 0 0 0; font-size: 13px; color:#6a737d;">데이터 수집 및 전처리를 수행하는 메인 파이썬 스크립트</p>
+                <span class="file-name">📓 01_소개.ipynb</span>
+                <p style="margin: 5px 0 0 0; font-size: 13px; color:#6a737d;">선형회귀 수식 이론 및 시각화 실습 노트북</p>
             </div>
             <div class="btn-group">
-                깃허브 웹 뷰어로 소스코드 보기 -->
-                <!-- <a href="https://github.com" target="_blank" class="btn-code">코드 보기</a>
+                <!-- 상대 경로를 사용해 내 웹사이트 내부에서 파일을 바로 엽니다 -->
+                <a href="./01_소개.ipynb" target="_blank" class="btn-view">파일 열기</a>
+                
+                <!-- 구글 코랩으로 바로 쏘아주는 공식 인터페이스 주소 (상대경로 활용 불가로 풀 주소 입력 필요) -->
+                <a href="https://google.com" target="_blank" class="btn-colab">Colab 실행</a>
             </div>
-        </li> -->
+        </li>
 
-        <!-- 예시 2: 주피터 노트북 파일 (.ipynb) - 코랩(?) 연동 포함 -->
+        <!-- 2. 일반 파이썬 파일 예시 (cs_nns_gndr_hgt.csv 또는 다른 .py 파일이 있다면) -->
         <li class="file-item">
             <div>
-                <span class="file-name">📓 _____________test.ipynb</span>
-                <p style="margin: 5px 0 0 0; font-size: 13px; color:#6a737d;">
-                    어쩌구  수식 및 Matplotlib 시각화 실습 </p>
+                <span class="file-name">📊 cs_nns_gndr_hgt.csv</span>
+                <p style="margin: 5px 0 0 0; font-size: 13px; color:#6a737d;">분석에 사용되는 데이터 세트 파일</p>
             </div>
             <div class="btn-group">
-                <a href="https://bahn28.github.io/potato/" target="_blank" class="btn-code">노트북 보기</a>
-                <!-- 구글 코랩에서 바로 실행할 수 있는 버튼 링크 -->
-                <a href="https://google.com" target="_blank" class="btn-colab">Colab에서 실행</a>
+                <!-- 웹 브라우저에서 생짜 데이터를 확인하거나 다운로드 -->
+                <a href="./cs_nns_gndr_hgt.csv" target="_blank" class="btn-view">데이터 보기</a>
             </div>
         </li>
 
@@ -110,3 +111,4 @@
 
 </body>
 </html>
+
